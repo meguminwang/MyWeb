@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiba Wang - Software Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=SF+Pro+Text:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <div class="logo-animation">
+                <div class="letter">S</div>
+                <div class="letter">W</div>
+            </div>
+            <div class="splash-text">Shiba Wang</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <div id="main-content" class="hidden">
+        <!-- Navigation -->
+        <nav class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <span class="logo-text">SW</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name">Shiba (Megumin) Wang</span>
+                    </h1>
+                    <p class="hero-subtitle">Full-Stack Developer & Co-Founder</p>
+                    <p class="hero-description">
+                        Student at University of Waterloo double majoring in Computational Mathematics and Mathematical Finance.
+                        Building innovative solutions at the intersection of technology and healthcare.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">View My Work</a>
+                        <a href="#contact" class="btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="code-line">
+                                <span class="code-keyword">#include</span>
+                                <span class="code-operator">&lt;</span><span class="code-string">stdio.h</span><span class="code-operator">&gt;</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-keyword">int</span>
+                                <span class="code-function">main</span>() {
+                            </div>
+                            <div class="code-line code-indent">
+                                <span class="code-function">printf</span>(<span class="code-string">"I hate Racket!\n"</span>);
+                            </div>
+                            <div class="code-line code-indent">
+                                <span class="code-keyword">return</span>
+                                <span class="code-variable">0</span>;
+                            </div>
+                            <div class="code-line">}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a BMath Co-op student at the University of Waterloo, double majoring in Computational Mathematics & Mathematical Finance.
+                            Currently working as a Software Developer Co-op at the Centre for Extended Learning Department,
+                            where I develop React applications and integrate RESTful APIs.
+                        </p>
+                        <p>
+                            As co-founder of Fountain Health Technology, I'm leading the development of a healthcare platform that digitizes
+                            medical record processes, reducing turnaround time by 90%. Previously, I worked as a Software Developer Intern
+                            at Nanjing Xitai Trading Co., where I built full-stack applications and optimized database performance.
+                        </p>
+                        <p>
+                            I love the goose in the UWaterloo Campus.
+                        </p>
+                        <div class="about-actions">
+                            <a href="#" class="btn-primary resume-btn">
+                                <i data-lucide="download"></i>
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="ShibaWang_ProfilePic.jpg" alt="Shiba (Megumin) Wang" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">Building innovative solutions across different domains</p>
+                </div>
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <h3>Software Developer Co-op</h3>
+                                    <span class="experience-period">Sep 2025 - Present</span>
+                                </div>
+                                <h4>Centre for Extended Learning Department, University of Waterloo</h4>
+                                <ul class="experience-highlights">
+                                    <li>Developed React applications with Preline UI for Academic Quality Enhancement review system</li>
+                                    <li>Integrated RESTful APIs in ASP.NET Core MVC with Entity Framework and MS SQL Server</li>
+                                    <li>Achieved 85% test coverage and 80% fewer production bugs with Jest and React Testing Library</li>
+                                    <li>Connected frontend to backend using Axios with Redux Toolkit state management</li>
+                                </ul>
+                                <div class="experience-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">ASP.NET Core</span>
+                                    <span class="tag">Redux</span>
+                                    <span class="tag">Jest</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <h3>Co-Founder & Full-Stack Developer</h3>
+                                    <span class="experience-period">Nov 2024 - Present</span>
+                                </div>
+                                <h4>Fountain Health Technology</h4>
+                                <ul class="experience-highlights">
+                                    <li>Lead development of healthcare platform connecting patients, physicians, and legal firms</li>
+                                    <li>Built React + Redux Toolkit frontend replacing weeks-long paper processes</li>
+                                    <li>Developed Python/FastAPI backend with PostgreSQL and JWT authentication</li>
+                                    <li>Implemented OCR-based AI data extraction reducing turnaround by 90%</li>
+                                </ul>
+                                <div class="experience-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">AI/ML</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <h3>Software Developer Intern</h3>
+                                    <span class="experience-period">Jun 2024 - Aug 2024</span>
+                                </div>
+                                <h4>Nanjing Xitai Trading Co., Ltd.</h4>
+                                <ul class="experience-highlights">
+                                    <li>Built full-stack Employee Management System with role-based access control</li>
+                                    <li>Developed 12 RESTful endpoints with Spring Boot and Spring Security</li>
+                                    <li>Implemented JWT with refresh token rotation and request rate limiting</li>
+                                    <li>Optimized database performance via Spring Data JPA queries and indexing</li>
+                                </ul>
+                                <div class="experience-tags">
+                                    <span class="tag">Spring Boot</span>
+                                    <span class="tag">MySQL</span>
+                                    <span class="tag">JWT</span>
+                                    <span class="tag">Material UI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Innovative solutions that make a difference</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="YS.png" alt="Your Servant Platform" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Your Servant</h3>
+                            <p>Canadian Representative Lookup Platform enabling citizens to find elected representatives by postal code with bill tracking and voting records.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Laravel/PHP Backend</span>
+                                <span class="feature-tag">React Frontend</span>
+                                <span class="feature-tag">Government APIs</span>
+                                <span class="feature-tag">Real-time Search</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/meguminwang/Your_Servant" class="project-link" target="_blank">
+                                    <i data-lucide="github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="YVNA.png" alt="Your Video Notes AI" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Your Video Notes AI</h3>
+                            <p>AI-Powered desktop application that transforms video content into comprehensive notes with visual analysis and multimodal AI integration.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">React/TypeScript</span>
+                                <span class="feature-tag">Tauri Desktop</span>
+                                <span class="feature-tag">FastAPI Backend</span>
+                                <span class="feature-tag">OpenAI Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/meguminwang/Your_Video_Notes_AI" class="project-link" target="_blank">
+                                    <i data-lucide="github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Tools and technologies I work with</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Redux</span>
+                            <span class="skill-tag">Zustand</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Material UI</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">ASP.NET Core</span>
+                            <span class="skill-tag">Laravel</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Database & Cloud</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Ready to collaborate on your next project</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:s2259wan@uwaterloo.ca">s2259wan@uwaterloo.ca</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:4389889882">(438) 988-9882</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/meguminwang?tab=repositories" target="_blank">meguminwang</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/shiba-wang-805588236/" target="_blank">Shiba Wang</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-text">
+                        <p>Developed by Shiba Wang</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#hero" class="footer-link">Back to Top</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
