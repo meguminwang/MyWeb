@@ -248,6 +248,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     z-index: 1;
     margin-bottom: 0;
+    isolation: isolate;
 }
 
 .hero-section::before {
@@ -497,8 +498,9 @@ section {
 }
 
 section:not(.hero-section) {
-    z-index: 10;
+    z-index: 100;
     position: relative;
+    background: #ffffff;
 }
 
 .section-header {
@@ -566,11 +568,12 @@ section:not(.hero-section) {
     background: #ffffff;
     padding: 120px 0;
     position: relative;
-    z-index: 10;
-    margin-top: -1px;
+    z-index: 100;
+    margin-top: -2px;
     clear: both;
     overflow: hidden;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.15);
+    isolation: isolate;
 }
 
 .about-section::before {
@@ -1288,6 +1291,9 @@ section:not(.hero-section) {
         padding: 100px 0 60px;
         min-height: auto;
         margin-top: 60px;
+        z-index: 1;
+        position: relative;
+        isolation: isolate;
     }
 
     .hero-content {
@@ -1347,9 +1353,11 @@ section:not(.hero-section) {
     .about-section {
         padding: 80px 0;
         background: #ffffff;
-        z-index: 10;
+        z-index: 100;
         position: relative;
-        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+        margin-top: -2px;
+        isolation: isolate;
     }
 
     .about-content {
@@ -1559,6 +1567,9 @@ section:not(.hero-section) {
     .hero-section {
         padding: 80px 0 40px;
         margin-top: 56px;
+        z-index: 1;
+        position: relative;
+        isolation: isolate;
     }
 
     .hero-name {
@@ -1600,9 +1611,11 @@ section:not(.hero-section) {
     .about-section {
         padding: 60px 0;
         background: #ffffff;
-        z-index: 10;
+        z-index: 100;
         position: relative;
-        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+        margin-top: -2px;
+        isolation: isolate;
     }
 
     .profile-image {
