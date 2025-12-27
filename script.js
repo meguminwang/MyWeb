@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     lucide.createIcons();
 });
 
-// Splash Screen Animation
+// Splash Screen Animation with smooth transition
 window.addEventListener('load', function() {
     setTimeout(() => {
         const splashScreen = document.getElementById('splash-screen');
@@ -16,10 +16,17 @@ window.addEventListener('load', function() {
             splashScreen.style.display = 'none';
             mainContent.classList.remove('hidden');
 
-            // Trigger entrance animations
+            // Re-initialize icons after content is visible
+            lucide.createIcons();
+
+            // Trigger entrance animations with stagger
+            initializeScrollAnimations();
             animateOnScroll();
+
+            // Add loaded class for additional CSS animations
+            document.body.classList.add('loaded');
         }, 500);
-    }, 2800);
+    }, 2500);
 });
 
 // Smooth scrolling for navigation links
@@ -101,6 +108,11 @@ function initializeAnimations() {
     });
 }
 
+// Initialize scroll animations (simplified)
+function initializeScrollAnimations() {
+    initializeAnimations();
+}
+
 // Typing animation for hero section
 function typeWriter(element, text, speed = 100) {
     let i = 0;
@@ -138,7 +150,8 @@ const observerOptions = {
 const observer = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
         }
     });
 }, observerOptions);
@@ -168,26 +181,7 @@ document.querySelector('.footer-link').addEventListener('click', function(e) {
     scrollToTop();
 });
 
-// Cursor following effect for project cards
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mousemove', function(e) {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-
-        const rotateX = (y - centerY) / 10;
-        const rotateY = (centerX - x) / 10;
-
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
-    });
-
-    card.addEventListener('mouseleave', function() {
-        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
-    });
-});
+// Project cards - simple hover effect handled by CSS
 
 // Progressive enhancement for reduced motion
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiba Wang - Software Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=SF+Pro+Text:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=SF+Pro+Display:wght@300;400;500;600;700&family=SF+Pro+Text:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -55,10 +55,10 @@
                         <span class="hero-greeting">Hello, I'm</span>
                         <span class="hero-name">Shiba (Megumin) Wang</span>
                     </h1>
-                    <p class="hero-subtitle">Full-Stack Developer & Co-Founder</p>
+                    <p class="hero-subtitle">Software Engineer & Founder</p>
                     <p class="hero-description">
-                        Student at University of Waterloo double majoring in Computational Mathematics and Mathematical Finance.
-                        Building innovative solutions at the intersection of technology and healthcare.
+                        BMath Co-op student at University of Waterloo studying Computational Mathematics & Mathematical Finance.
+                        Building low-latency systems and real-time applications with a focus on performance engineering.
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn-primary">View My Work</a>
@@ -106,20 +106,17 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>
-                            I'm a BMath Co-op student at the University of Waterloo, double majoring in Computational Mathematics & Mathematical Finance.
-                            Currently working as a Software Developer Co-op at the Centre for Extended Learning Department,
-                            where I develop React applications and integrate RESTful APIs.
+                            I'm a BMath Co-op student at the University of Waterloo, double majoring in Computational Mathematics & Mathematical Finance (GPA: 3.72).
+                            Currently building academic review portals at the Centre for Extended Learning with React and .NET, focusing on permission systems and concurrent edit handling.
                         </p>
                         <p>
-                            As co-founder of Fountain Health Technology, I'm leading the development of a healthcare platform that digitizes
-                            medical record processes, reducing turnaround time by 90%. Previously, I worked as a Software Developer Intern
-                            at Nanjing Xitai Trading Co., where I built full-stack applications and optimized database performance.
+                            As founder and software engineer at Fountain Health Technologies Inc. (Fountainhealth.ca), I implemented a real-time queue management and data sharing platform for clinics.
                         </p>
                         <p>
-                            I love the goose in the UWaterloo Campus.
+                            Passionate about low-latency quant systems, focusing on using memory pools and zero-allocation hot paths to reduce the latency!
                         </p>
                         <div class="about-actions">
-                            <a href="Shiba(Megumin)_Wang_Resume.pdf" class="btn-primary resume-btn">
+                            <a href="Shiba_Wang_Resume_Y.pdf" class="btn-primary resume-btn">
                                 <i data-lucide="download"></i>
                                 Download Resume
                             </a>
@@ -145,20 +142,20 @@
                         <div class="timeline-content">
                             <div class="experience-card">
                                 <div class="experience-header">
-                                    <h3>Software Developer Co-op</h3>
-                                    <span class="experience-period">Sep 2025 - Present</span>
+                                    <h3>Software Engineer Co-op</h3>
+                                    <span class="experience-period">Sept 2025 - Present</span>
                                 </div>
-                                <h4>Centre for Extended Learning Department, University of Waterloo</h4>
+                                <h4>University of Waterloo, Centre for Extended Learning</h4>
                                 <ul class="experience-highlights">
-                                    <li>Developed React applications with Preline UI for Academic Quality Enhancement review system</li>
-                                    <li>Integrated RESTful APIs in ASP.NET Core MVC with Entity Framework and MS SQL Server</li>
-                                    <li>Achieved 85% test coverage and 80% fewer production bugs with Jest and React Testing Library</li>
-                                    <li>Connected frontend to backend using Axios with Redux Toolkit state management</li>
+                                    <li>Built academic review portal with permission system enforced at both React and .NET API layers, consolidating 15+ access checks into single reusable module</li>
+                                    <li>Implemented auto-save handling concurrent edits across 10+ form sections with debounced inputs and automatic rollback on validation failure</li>
+                                    <li>Reduced multi-step approval to single atomic operation with cache invalidation propagating state change to all active clients immediately</li>
+                                    <li>Wrote 57 unit tests covering full 5-role × 6-status permission matrix, running as CI gate on every pull request</li>
                                 </ul>
                                 <div class="experience-tags">
                                     <span class="tag">React</span>
                                     <span class="tag">ASP.NET Core</span>
-                                    <span class="tag">Redux</span>
+                                    <span class="tag">TypeScript</span>
                                     <span class="tag">Jest</span>
                                 </div>
                             </div>
@@ -170,21 +167,21 @@
                         <div class="timeline-content">
                             <div class="experience-card">
                                 <div class="experience-header">
-                                    <h3>Co-Founder & Full-Stack Developer</h3>
-                                    <span class="experience-period">Nov 2024 - Present</span>
+                                    <h3>Founder & Software Engineer</h3>
+                                    <span class="experience-period">Jan 2025 - Present</span>
                                 </div>
-                                <h4>Fountain Health Technology</h4>
+                                <h4>Fountain Health Technologies Inc.</h4>
                                 <ul class="experience-highlights">
-                                    <li>Lead development of healthcare platform connecting patients, physicians, and legal firms</li>
-                                    <li>Built React + Redux Toolkit frontend replacing weeks-long paper processes</li>
-                                    <li>Developed Python/FastAPI backend with PostgreSQL and JWT authentication</li>
-                                    <li>Implemented OCR-based AI data extraction reducing turnaround by 90%</li>
+                                    <li>Architected real-time queue management platform for walk-in clinics serving three client types with WebSocket pub/sub and server-side tenant isolation</li>
+                                    <li>Eliminated race conditions by replacing read-modify-write with single atomic SQL UPDATE, guaranteeing position consistency under concurrent check-ins</li>
+                                    <li>Reduced ghost connections from 15% to under 1% via 30s heartbeat timeout; cut queue lookup latency from 800ms to 12ms with composite index</li>
+                                    <li>Achieved 99.2% SMS delivery rate with idempotency keys preventing duplicate sends and webhooks for failure tracking</li>
                                 </ul>
                                 <div class="experience-tags">
+                                    <span class="tag">WebSocket</span>
+                                    <span class="tag">PostgreSQL</span>
                                     <span class="tag">React</span>
                                     <span class="tag">FastAPI</span>
-                                    <span class="tag">PostgreSQL</span>
-                                    <span class="tag">AI/ML</span>
                                 </div>
                             </div>
                         </div>
@@ -195,21 +192,20 @@
                         <div class="timeline-content">
                             <div class="experience-card">
                                 <div class="experience-header">
-                                    <h3>Software Developer Intern</h3>
+                                    <h3>Software Engineer Intern</h3>
                                     <span class="experience-period">Jun 2024 - Aug 2024</span>
                                 </div>
                                 <h4>Nanjing Xitai Trading Co., Ltd.</h4>
                                 <ul class="experience-highlights">
-                                    <li>Built full-stack Employee Management System with role-based access control</li>
-                                    <li>Developed 12 RESTful endpoints with Spring Boot and Spring Security</li>
-                                    <li>Implemented JWT with refresh token rotation and request rate limiting</li>
-                                    <li>Optimized database performance via Spring Data JPA queries and indexing</li>
+                                    <li>Built ETL pipeline in Python processing daily sales CSVs with pandas validation, reducing manual data entry from 2 hours to 10 minutes</li>
+                                    <li>Developed React dashboard backed by FastAPI serving regional sales and inventory metrics via REST endpoints</li>
+                                    <li>Deployed on internal server with cron-scheduled data refresh, replacing weekly Excel reports with self-service access</li>
                                 </ul>
                                 <div class="experience-tags">
-                                    <span class="tag">Spring Boot</span>
-                                    <span class="tag">MySQL</span>
-                                    <span class="tag">JWT</span>
-                                    <span class="tag">Material UI</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">React</span>
+                                    <span class="tag">PostgreSQL</span>
                                 </div>
                             </div>
                         </div>
@@ -223,24 +219,35 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">Innovative solutions that make a difference</p>
+                    <p class="section-subtitle">Low-latency systems and performance engineering</p>
                 </div>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-image">
-                            <img src="YS.png" alt="Your Servant Platform" class="project-img">
+                        <div class="project-icon-header">
+                            <div class="project-icon">
+                                <i data-lucide="bar-chart-3"></i>
+                            </div>
+                            <div class="project-metrics">
+                                <span class="metric">12M orders/sec</span>
+                                <span class="metric">86ns latency</span>
+                            </div>
                         </div>
                         <div class="project-content">
-                            <h3>Your Servant</h3>
-                            <p>Canadian Representative Lookup Platform enabling citizens to find elected representatives by postal code with bill tracking and voting records.</p>
+                            <h3>Low-Latency Order Book & Matching Engine</h3>
+                            <p>Price-time priority matching engine supporting AddOrder, CancelOrder, and ModifyOrder. Orders organized by price level using std::map with doubly-linked list, achieving O(log P) insert and O(1) cancel.</p>
+                            <ul class="project-highlights">
+                                <li>Pre-allocated 100K Order objects in memory pool eliminating runtime heap allocation</li>
+                                <li>Matching logic walks opposite book filling resting orders in FIFO sequence with partial fill support</li>
+                                <li>Validated with 15 unit tests covering self-trade prevention and invalid input rejection</li>
+                            </ul>
                             <div class="project-features">
-                                <span class="feature-tag">Laravel/PHP Backend</span>
-                                <span class="feature-tag">React Frontend</span>
-                                <span class="feature-tag">Government APIs</span>
-                                <span class="feature-tag">Real-time Search</span>
+                                <span class="feature-tag">C++17</span>
+                                <span class="feature-tag">CMake</span>
+                                <span class="feature-tag">Google Test</span>
+                                <span class="feature-tag">Memory Pools</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/meguminwang/Your_Servant" class="project-link" target="_blank">
+                                <a href="https://github.com/meguminwang/OrderBook-MatchingMachine" class="project-link" target="_blank">
                                     <i data-lucide="github"></i>
                                     View Code
                                 </a>
@@ -249,20 +256,31 @@
                     </div>
 
                     <div class="project-card">
-                        <div class="project-image">
-                            <img src="YVNA.png" alt="Your Video Notes AI" class="project-img">
+                        <div class="project-icon-header">
+                            <div class="project-icon">
+                                <i data-lucide="network"></i>
+                            </div>
+                            <div class="project-metrics">
+                                <span class="metric">8.2µs P50 latency</span>
+                                <span class="metric">79K msgs/sec</span>
+                            </div>
                         </div>
                         <div class="project-content">
-                            <h3>Your Video Notes AI</h3>
-                            <p>AI-Powered desktop application that transforms video content into comprehensive notes with visual analysis and multimodal AI integration.</p>
+                            <h3>Low-Latency TCP Gateway</h3>
+                            <p>Single-threaded TCP server using epoll (edge-triggered) routing binary messages to Order Book. Handles multiple concurrent clients with zero heap allocation on hot path.</p>
+                            <ul class="project-highlights">
+                                <li>Length-prefixed binary protocol for AddOrder/CancelOrder with TCP framing for partial reads</li>
+                                <li>Input validation rejecting malformed data before processing</li>
+                                <li>Message parsing benchmarked at 50M ops/sec with 17 unit tests</li>
+                            </ul>
                             <div class="project-features">
-                                <span class="feature-tag">React/TypeScript</span>
-                                <span class="feature-tag">Tauri Desktop</span>
-                                <span class="feature-tag">FastAPI Backend</span>
-                                <span class="feature-tag">OpenAI Integration</span>
+                                <span class="feature-tag">C++17</span>
+                                <span class="feature-tag">Linux epoll</span>
+                                <span class="feature-tag">Binary Protocols</span>
+                                <span class="feature-tag">Socket Programming</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/meguminwang/Your_Video_Notes_AI" class="project-link" target="_blank">
+                                <a href="https://github.com/meguminwang/TCP-Gateway" class="project-link" target="_blank">
                                     <i data-lucide="github"></i>
                                     View Code
                                 </a>
@@ -278,52 +296,61 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Skills & Technologies</h2>
-                    <p class="section-subtitle">Tools and technologies I work with</p>
+                    <p class="section-subtitle">Systems programming, web development, and performance engineering</p>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h3>Languages</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">C#</span>
                             <span class="skill-tag">C/C++</span>
-                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Python</span>
                             <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">Bash</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3>Frontend</h3>
+                        <h3>Systems</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">TCP/IP</span>
+                            <span class="skill-tag">Socket Programming</span>
+                            <span class="skill-tag">epoll</span>
+                            <span class="skill-tag">Memory Pools</span>
+                            <span class="skill-tag">Binary Protocols</span>
+                            <span class="skill-tag">WebSocket</span>
+                            <span class="skill-tag">Concurrency</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">CMake</span>
+                            <span class="skill-tag">Google Test</span>
+                            <span class="skill-tag">Jest</span>
+                            <span class="skill-tag">gdb</span>
+                            <span class="skill-tag">perf</span>
+                            <span class="skill-tag">Valgrind</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">React</span>
-                            <span class="skill-tag">Redux</span>
-                            <span class="skill-tag">Zustand</span>
-                            <span class="skill-tag">Tailwind CSS</span>
-                            <span class="skill-tag">Material UI</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Backend</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
                             <span class="skill-tag">FastAPI</span>
-                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Node.js</span>
                             <span class="skill-tag">ASP.NET Core</span>
-                            <span class="skill-tag">Laravel</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Database & Cloud</h3>
-                        <div class="skill-tags">
                             <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">MongoDB</span>
                             <span class="skill-tag">Redis</span>
                             <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Nginx</span>
                         </div>
                     </div>
                 </div>
@@ -350,11 +377,11 @@
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <i data-lucide="phone"></i>
+                                <i data-lucide="map-pin"></i>
                             </div>
                             <div class="contact-details">
-                                <h4>Phone</h4>
-                                <a href="tel:4389889882">(438) 988-9882</a>
+                                <h4>Location</h4>
+                                <span>Waterloo, ON, Canada</span>
                             </div>
                         </div>
                         <div class="contact-item">
